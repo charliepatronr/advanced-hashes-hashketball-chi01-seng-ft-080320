@@ -203,7 +203,7 @@ end
 
 def player_stats(name)
   final_hash ={}
-  game_hash.each_with_object({}) do |(key, value), final_hash|
+  game_hash.each do |key, value|
     value.each do |inner_key, inner_value|
       if(inner_key == :players)
         inner_value.each do |player|
