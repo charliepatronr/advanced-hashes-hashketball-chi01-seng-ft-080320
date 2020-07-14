@@ -214,6 +214,6 @@ def player_stats(name)
     end
   end
   final_hash
-            binding.pry
+  binding.pry
 
 end 
