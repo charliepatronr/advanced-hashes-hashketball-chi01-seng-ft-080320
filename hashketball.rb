@@ -1,4 +1,5 @@
 # Write your code below game_hash
+require "pry"
 def game_hash
   {
     home: {
@@ -126,4 +127,81 @@ def game_hash
   }
 end
 
-# Write code here
+
+#rspec spec/hashketball_spec.rb -e num_points_scored
+
+def num_points_scored(name)
+  target = ''
+    game_hash.each do |home_away_key, outer_value|
+      outer_value.each do |team_info, value|
+        if(team_info == :players)
+          value.each do |player|
+            if(player[:player_name] == name)
+              target = player[:points]
+            end
+          end 
+        end
+      end 
+    end 
+  target
+end 
+
+
+def shoe_size(name)
+    target = ''
+    game_hash.each do |home_away_key, outer_value|
+      outer_value.each do |team_info, value|
+        if(team_info == :players)
+          value.each do |player|
+            if(player[:player_name] == name)
+              target = player[:shoe]
+            end
+          end 
+        end
+      end 
+    end 
+  target
+end 
+
+
+def team_colors(team_name)
+  target =nil
+  game_hash.each do |key, value|
+    if(value[:team_name] == team_name)
+      target = value[:colors]
+    end 
+  end 
+  target
+end 
+
+
+
+def team_names
+  target =[]
+  game_hash.each do |key, value|
+    target.push(value[:team_name])
+  end 
+  target
+end 
+
+def player_numbers(team)
+  jerseys = []
+  target_team = ''
+    game_hash.each do |home_away_key, outer_value|
+      outer_value.each do |team_info, value|
+        if(value == team)
+          target_team == true
+        end 
+          if(team_info == :players && target_team )
+            puts 'FUCK THIS'
+            value.each do |player|
+            jerseys.push(player[:number])
+            end 
+          end
+      end 
+    end 
+  puts jerseys
+end 
+
+
+player_numbers("Brooklyn Nets")
