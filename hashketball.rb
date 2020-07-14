@@ -190,7 +190,7 @@ def player_numbers(team)
     game_hash.each do |home_away_key, outer_value|
       outer_value.each do |team_info, value|
         if(value == team)
-          target_team == true
+          target_team = true
         end 
         binding.pry
           if(team_info == :players && target_team )
