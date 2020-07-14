@@ -206,6 +206,9 @@ def player_stats(name)
     value.each do |inner_key, inner_value|
       if(inner_key == :players)
         inner_value.each do |player|
+          if(player[:player_name] == name)
+            final_hash = player
+          end 
           binding.pry
         end 
       end 
