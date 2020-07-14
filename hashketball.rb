@@ -221,6 +221,8 @@ end
 def big_shoe_rebounds
   biggest_shoe = -1
   game_hash.each do |key, value|
-    value.each do |link_to_unless_current
+    value.each do |inner_key, inner_value|
+      binding.pry
+    end 
   end 
 end
