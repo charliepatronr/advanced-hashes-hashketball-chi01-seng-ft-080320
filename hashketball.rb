@@ -214,4 +214,5 @@ def player_stats(name)
       end 
     end
   end
+  final_hash
 end 
