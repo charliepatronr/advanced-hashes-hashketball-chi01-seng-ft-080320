@@ -202,7 +202,8 @@ def player_numbers(team)
 end 
 
 def player_stats(name)
-  game_hash.each_with_object({}) do |(key, value), final_hash|
+  final_hash ={}
+  game_hash.each do |key, value|
     value.each do |inner_key, inner_value|
       if(inner_key == :players)
         inner_value.each do |player|
@@ -214,5 +215,4 @@ def player_stats(name)
     end
   end
   final_hash
-  
 end 
