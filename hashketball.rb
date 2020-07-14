@@ -190,7 +190,6 @@ def player_numbers(team)
       target_team = false
       outer_value.each do |team_info, value|
         if(value == team)
-          puts team
           target_team = true
         end 
           if(team_info == :players && target_team == true)
