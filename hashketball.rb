@@ -201,7 +201,7 @@ def player_numbers(team)
   jerseys
 end 
 
-def player_stats
+def player_stats(name)
   game_hash.each_with_object({}) do |(key, value), final_hash|
     binding.pry
   end
