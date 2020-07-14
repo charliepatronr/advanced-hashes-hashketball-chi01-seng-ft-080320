@@ -204,4 +204,5 @@ end
 def player_stats
   
   game_hash.each_with_object({}) do |(key, value), final_hash|
+    binding.pry
 end 
