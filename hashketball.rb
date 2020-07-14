@@ -209,7 +209,6 @@ def player_stats(name)
           if(player[:player_name] == name)
             final_hash = player
           end 
-          binding.pry
         end 
       end 
     end
