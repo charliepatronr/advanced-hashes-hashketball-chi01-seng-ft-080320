@@ -184,8 +184,6 @@ def team_names
   target
 end 
 
-
-
 def player_numbers(team)
   jerseys = []
     game_hash.each do |home_away_key, outer_value|
