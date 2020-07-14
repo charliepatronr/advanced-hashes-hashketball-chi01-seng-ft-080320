@@ -204,9 +204,10 @@ end
 def player_stats(name)
   game_hash.each_with_object({}) do |(key, value), final_hash|
     key.each do |inner_key, inner_value|
-    end
-    if(key == :players)
+      if(key == :players)
       binding.pry
     end 
+    end
+
   end
 end 
