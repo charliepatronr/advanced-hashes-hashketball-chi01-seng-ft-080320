@@ -193,8 +193,6 @@ def player_numbers(team)
           target_team = true
         end 
           if(team_info == :players && target_team == true)
-            puts team_info
-            puts 'FUCK THIS'
             value.each do |player|
               jerseys.push(player[:number])
             end 
