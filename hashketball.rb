@@ -224,11 +224,9 @@ def big_shoe_rebounds
     value.each do |inner_key, inner_value|
       if(inner_key == :players)
         inner_value.each do |player|
+          binding.pry
         end
-
       end 
-
-      binding.pry
     end 
   end 
 end
