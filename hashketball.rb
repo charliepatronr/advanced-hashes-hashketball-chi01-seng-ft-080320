@@ -200,7 +200,7 @@ def player_numbers(team)
           end
       end 
     end 
-  jerseys
+  pp jerseys
 end 
 
 
