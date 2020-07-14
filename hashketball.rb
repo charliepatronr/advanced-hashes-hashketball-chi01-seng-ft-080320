@@ -192,7 +192,7 @@ def player_numbers(team)
         if(value == team)
           target_team = true
         end 
-          if(team_info == :players && target_team )
+          if(team_info == :players && target_team == true)
             puts 'FUCK THIS'
             value.each do |player|
             jerseys.push(player[:number])
