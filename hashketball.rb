@@ -190,9 +190,9 @@ def player_numbers(team)
     game_hash.each do |home_away_key, outer_value|
       outer_value.each do |team_info, value|
         if(value == team)
-          target_team = true
+          target_team = team
         end 
-          if(team_info == :players && target_team == true)
+          if(team_info == :players && target_team == team)
             puts 'FUCK THIS'
             value.each do |player|
               jerseys.push(player[:number])
