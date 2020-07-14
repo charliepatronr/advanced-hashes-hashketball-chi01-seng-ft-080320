@@ -175,7 +175,6 @@ def team_colors(team_name)
 end 
 
 
-
 def team_names
   target =[]
   game_hash.each do |key, value|
