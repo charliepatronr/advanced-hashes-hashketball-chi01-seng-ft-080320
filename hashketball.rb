@@ -192,7 +192,6 @@ def player_numbers(team)
         if(value == team)
           target_team = true
         end 
-        binding.pry
           if(team_info == :players && target_team )
             puts 'FUCK THIS'
             value.each do |player|
