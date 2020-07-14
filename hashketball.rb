@@ -186,7 +186,7 @@ end
 
 def player_numbers(team)
   jerseys = []
-  target_team = ''
+  target_team = false
     game_hash.each do |home_away_key, outer_value|
       outer_value.each do |team_info, value|
         if(value == team)
