@@ -127,8 +127,6 @@ def game_hash
 end
 
 
-#rspec spec/hashketball_spec.rb -e num_points_scored
-
 def num_points_scored(name)
   target = ''
     game_hash.each do |home_away_key, outer_value|
