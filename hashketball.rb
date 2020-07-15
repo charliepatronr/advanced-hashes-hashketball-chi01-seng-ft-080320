@@ -227,7 +227,7 @@ def big_shoe_rebounds
         inner_value.each do |player|
           if(player[:shoe] > biggest_shoe)
             biggest_shoe = player[:shoe]
-            player_rebounds= player[:player_name]
+            player_rebounds= player[:rebounds]
           end 
         end
       end 
